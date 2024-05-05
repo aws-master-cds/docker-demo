@@ -101,3 +101,42 @@ docker image history mongo # exposed port, volumes
 
 ---
 docker run -p 27017:27017 -v mongodb:/data/db -v mongo-configdb:/data/configdb --rm -d --name mongodb mongo
+
+---
+docker-compose top
+docker-compose stats
+docker-compose up -d   # runs the containers in the detached mode
+docker-compose down 
+docker-compose down -v # removes the volumes
+docker-compose logs    # services/containers logs
+
+---
+docker container inspect <container-name>
+docker volume inspect <volume-name>
+docker image inspect <image-name>
+docker network inspect <network-name>
+
+--
+docker-hub 
+ - signup, create a public repository
+ - security > create token
+
+docker login 
+docker tag <local-tag> <remote-tag> # docker tag fav-api awsmastercds/fav-api
+docker push awsmastercds/fav-api
+
+---
+github 
+  - signup
+  - create public repository
+  - profile > settings > developer settings > classic token
+
+git init # add .gitignore file
+git remote add origin https://github.com/aws-master-cds/docker-demo.git
+git branch -M main
+git add .
+git commit -m "docker, dockerfile, docker-compose demo - MERN app"
+git push --set-upstream origin main
+git push
+
+
