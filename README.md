@@ -140,7 +140,11 @@ git push --set-upstream origin main
 git push
 
 ---
-postman 
+postman (to test fav-api) - GUI (client to be download) or run on browser
  - signup with aws.master.cds@gmail.com google account, no new password
 
 --
+command line tool to test fav-api
+ - httpie https://httpie.io/docs/cli/centos-and-rhel
+ - curl
+ 
