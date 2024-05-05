@@ -118,7 +118,7 @@ docker network inspect <network-name>
 
 --
 docker-hub 
- - signup, create a public repository
+ - signup, create a public repository (signup with google account aws.master.cds@gmail.com, no new password)
  - security > create token
 
 docker login 
@@ -127,7 +127,7 @@ docker push awsmastercds/fav-api
 
 ---
 github 
-  - signup
+  - signup (used aws.master.cds@gmail.com for signup, new password)
   - create public repository
   - profile > settings > developer settings > classic token
 
@@ -139,4 +139,8 @@ git commit -m "docker, dockerfile, docker-compose demo - MERN app"
 git push --set-upstream origin main
 git push
 
+---
+postman 
+ - signup with aws.master.cds@gmail.com google account, no new password
 
+--
